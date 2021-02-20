@@ -1,13 +1,15 @@
-import { Profiler } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ControlPainel, Login, Profile, Register } from "./app";
 
 
-function Routes() {
+const defaultRoute = () => <></>
+
+export default function Routes() {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Switch>
-        <Route path="/login" exact={true} component={Login} />
+        <Route path="/" exact component={defaultRoute} />
+        <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/profile" component={Profile} />
         <Route path="/controlPainel" component={ControlPainel}/>
@@ -15,5 +17,3 @@ function Routes() {
     </BrowserRouter>
   );
 }
-
-export default Routes;

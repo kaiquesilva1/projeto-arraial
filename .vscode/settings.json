@@ -1,0 +1,17 @@
+ {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "editor.fontSize": 15,
+    "files.trimFinalNewlines": true,
+    "javascript.suggest.autoImports": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  "diffEditor.ignoreTrimWhitespace": false,
+ }
